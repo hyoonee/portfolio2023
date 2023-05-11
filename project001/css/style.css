@@ -1,0 +1,101 @@
+@charset 'utf-8';
+
+/* 전체설정 */
+* {margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+
+body {font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리구간설정/////////////////////////////////////////////// */
+
+/* 768px 이상구간설정 /////////////////////////////////////*/
+@media(mix-width:768px){
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
