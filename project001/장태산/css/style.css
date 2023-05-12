@@ -4,7 +4,7 @@
 /* 전체설정 */
 
 * {margin: 0;
-    border: 0;}
+    padding: 0;}
 ul,ol {list-style: none;}
 a {text-decoration: none;
     color: #000;}
@@ -16,6 +16,146 @@ body {font-family: 'Nanum Gothic', sans-serif;
 
 }
     
+
+
+/* 로고설정 */
+.logo {width: 150px;
+        height: 90px;
+        background-image: url(../img/logo.png);
+        text-indent: -9999px;
+        background-size: contain;
+        background-repeat: no-repeat;}
+        
+/* gnb 설정 */
+.gnb {}
+.gnb ul {display: flex;}
+.gnb ul li {}
+.gnb ul li a {padding: 10px 30px;
+            display: block;
+            color: #333;}
+
+
+/* hero 설정 */
+.hero {width: 100%;
+        height: 80vh;
+        overflow: hidden;}
+.hero img {width: 100%;
+        transform: translateY(-300px);}
+/* hero화살표설정 */
+.hero_arrow {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;}
+
+
+
+.hero_num {position: absolute;
+            right: 20%;
+            top: 30%;
+            font-weight: bold;
+            font-size: 14px;
+            }
+
+.hero_num em {font-size: 18px;
+            font-style: normal;
+            margin-right: 5px;
+            color: #006837;}
+
+
+.hero_arrow span {display: block;
+                font-size: 28px;
+                font-weight: bold;
+                color: #006837;
+                padding: 15px 0;
+                cursor: pointer;}
+
+.hero_arrow span:hover {color: #333;}
+
+
+
+/* 전체타이틀설정 */
+.title {font-size: 28px;
+            margin-bottom: 20px;}
+.title::before {content: "\00A4";
+                    color: #006837;
+                    font-size: 20px;
+                    margin-right: 5px;}
+
+
+
+
+
+
+
+/* info설정 */
+.info .title {font-size: 28px;
+            margin-bottom: 20px;}
+.info .title::before {content: "\00A4";
+                    color: #006837;
+                    font-size: 20px;
+                    margin-right: 5px;}
+
+.info .top_txt {font-size: 14px;
+                margin-bottom: 15px;
+                color: #474747;}
+.info .top_txt em {font-weight: bold;
+                    font-style: normal;}
+.info .bottom_txt {
+                    font-size: 22px;
+                    letter-spacing: 2px;}
+
+.info .bottom_txt em {color: #f15a25;
+                    font-size: 24px;
+                    font-weight: bold;
+                    font-style: normal;}
+
+
+
+/* 문의하기설정 */
+.qnaimg {width: 100%;}
+.qna {}
+.qna h2 {font-size: 22px;
+        color: #006837;
+        font-weight: bold;}
+.qna .listBox {display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            justify-content: space-between;}
+.qna ul {width: 60%;
+        }
+.qna li {padding: 15px 0;
+        align-items: center;
+        border-bottom: dotted 2px;
+        margin-bottom: 10px;
+        }
+.qna li::before {content: "\2022";
+                font-size: 28px;
+                vertical-align: middle;
+                color: #006837;}
+.qna li:nth-child(2):before {color: #f15a25;}
+
+.qna button {border: none;
+            padding: 20px 45px;
+            background-color: #006837;
+            color: #fff;
+            cursor: pointer;}
+.qna button:hover {opacity: 0.6;}
+
+.qna p {font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: 20px;}
+
+
+/* 박스위아래 여백설정 */
+.box3 {padding-bottom: 20px;}
+.box4 {padding-bottom: 40px;}
+
+
+
+
+
 
 
 
@@ -33,11 +173,13 @@ body {font-family: 'Nanum Gothic', sans-serif;
 
     /* 박스1과 박스2의 가로정렬 */
     .boxA {display: flex;
-        justify-content: space-between;}
+        justify-content: space-between;
+        align-items: center;}
 
     /* 박스5-1과 박스5-2의 가로정렬 */
-    .box5 {display: flex;}
-    .box5-1,.box5-2 {width: 50%;}
+    .box5 {display: flex;
+            justify-content: space-between;}
+    .box5-1,.box5-2 {width: 46%;}
 
     /* 박스9-1,박스9-2,박스9-3의 가로정렬 */
     .box9 {display: flex;
@@ -50,6 +192,21 @@ body {font-family: 'Nanum Gothic', sans-serif;
 
 
 }
+
+/* 1140px이상일때//////////////////////////////////////////////// */
+@media(min-width:1140px){
+
+header,.box3-2,.box4-1,.box5 {width: 1100px;
+        margin: 0 auto;}
+
+
+
+
+
+
+
+}
+
 
 
 

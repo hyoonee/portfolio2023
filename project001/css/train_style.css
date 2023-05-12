@@ -1,5 +1,10 @@
 @charset 'utf-8';
-
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* 전체설정 */
 * {margin: 0;
     padding: 0;}
@@ -9,7 +14,266 @@ a {text-decoration: none;
 img {border: none;
     vertical-align: bottom;}
 
-body {font-size: 14px;}
+body {font-size: 14px;
+    font-family: 'BMJUA';}
+
+
+
+/* 히어로설정 */
+.boxA {position: relative;
+        z-index: 10;}
+.boxA a {}
+.boxA a img {position: absolute;
+            margin-left: 50%;
+            margin-top: 40px;
+            left: -147px;}
+
+.boxB {position: relative;
+        z-index: 9;}
+.hero {
+        }
+.hero .hero_arrow {position: absolute;
+                    left: 100px;
+                    top: 50%;
+                    color: #fff;}
+/* .hero img {width: 100%;
+        position: relative;
+        } */
+.boxB p {position: absolute;
+        right: 20%;
+        top: 30%;
+        color: #fff;
+        font-size: 30px;}
+
+
+
+
+/* 대표메뉴설정 */
+.boxC {width: 100%;
+    }
+.boxC .gnb {width: 100%;}
+.boxC .gnb ul {display: flex;
+            flex-wrap: wrap;
+    
+    }
+.boxC .gnb ul li {
+                width: 20%;
+                text-align: center;
+                padding: 28px 50px;
+                box-sizing: border-box;            
+            }
+.boxC .gnb ul li a {color: #fff;
+                    font-size: 38px;}
+.gnb li:nth-child(1),li:nth-child(3),li:nth-child(5) {
+    background-color: #9CB1FF;
+    }
+.gnb li:nth-child(2),li:nth-child(4) {
+    background-color: #698DFF;
+    }
+
+
+/* 포토갤러리 설정 */
+.box1 {position: relative;
+    background-color: #ADD2FF;
+    }
+.box1-1 { 
+    
+    }
+.box1-1 .title {position: absolute;
+                text-align: center;
+                
+                width: 100%;
+                height: 25%;
+                padding-top: 100px;
+                
+            }
+.box1-1 .title h1 {color: #fff;
+                font-size: 50px;
+                font-weight: normal;
+                }
+.box1-1 .title p {color: #4d4d4d;
+                font-size: 15px;
+                padding-top: 15px;}
+
+.box1-2 {background-color: #ADD2FF;}
+.box1-2 .photoimg {position: absolute;}
+.box1-2 .photoimg .imgBox {position: absolute;
+                        align-items: center;
+                        margin-top: 250px;
+                        
+    }
+
+.box1-2 .imgBox img {width: 630px;
+                    height: 460px;
+                    
+                    }
+.box1-2 .photoimg .mainimg {display: flex;
+                            margin-top: 15px;
+    
+}
+.box1-2 .photoimg .outimg {display: flex;}
+.box1-2 .photoimg .trainimg {display: flex;}
+.box1-2 .photoimg .facilityimg {display: flex;}
+
+/* 포토갤러리 tab메뉴설정 */
+.box1-3 {
+        }
+.box1-3 .tab {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 15%;
+            
+            }
+.box1-3 .tab li {background-color: #9DC1FF;
+                border-radius: 25px;
+                box-sizing: content-box;
+                display: flex;
+                padding: 15px 80px;
+                margin-top: 850px;
+                margin-bottom: 125px;
+                
+                }
+.box1-3 .tab li:hover {background-color: #698DFF;}
+.box1-3 .tab li a {
+                font-size: 30px;
+                color: #fff;
+                display: block;
+
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                
+                
+               }
+
+/* 박물관둘러보기 설정*/
+.box2 {}
+.box2-1 {
+        left: 35%;
+        top: 100px;}
+.box2-1 .title {margin-top: -200px;
+    text-align: center;
+    
+    
+    }
+.box2-1 .TT {font-size: 50px;
+            font-weight: normal;
+            color: #7AA1FF;}
+.box2-1 .title img{margin-left: -260px;}
+.box2-1 .title h1{margin-top: -90px;}
+.box2-1 .title p{color: #4d4d4d;
+                margin-top: 20px;
+                text-align: center;
+    }
+
+
+/* 트레일러설정 */
+.box2-2{}
+.box2-2 .trailer{}
+.box2-2 .trailer ul {display: flex;
+                    justify-content: center;
+                    margin-top: 50px;}
+.box2-2 .trailer ul li {}
+.box2-2 img {width: 760px;
+            height: 520px;}
+
+.box2-3{}
+.box2-3 ul{}
+.box2-3 ul li{
+            }
+.box2-3 ul li a{display: inline-block;
+                
+                background-color: #9DC1FF;
+                color: #fff;}            
+
+
+/* 예약하기 설정 */
+.box3{}
+.box3-1{}
+.box3-1 .title{}
+.box3-1 .title h2{}
+.box3-1 .title p{}
+
+.box3-2{}
+
+
+
+/* 오시는길 설정 */
+.box4{}
+.box4-1{}
+.box4-1 .title{}
+.box4-1 .title h2{}
+.box4-1 .title p{}
+
+.box4-2{}
+
+.box4-3{}
+.box4-3 .txt{}
+.box4-3 .txt span{}
+.box4-3 .txt span:nth-child(1)
+.box4-3 .txt span:nth-child(2)
+
+/* 공지사항 설정 */
+.box5{}
+.box5-1{}
+.box5-1 .notice{}
+.box5-1 .notice img{}
+.box5-1 .notice .title{}
+.box5-1 .notice .title img{}
+.box5-1 .notice .title h2{}
+.box5-1 .notice .title p{}
+
+.box5-2{}
+.box5-2 p{}
+.box5-2 p span{}
+
+
+
+/* 방문후기 설정 */
+.box6{}
+.box6-1{}
+.box6-1 .title{}
+.box6-1 .title img{}
+.box6-1 .title h2{}
+.box6-1 .title p
+{}
+
+.box6-2{}
+.box6-2 .preview{}
+.box6-2 .preview img
+{}
+.box6-3{}
+.box6-3 .review{}
+.box6-3 .review img{}
+.box6-3 .review .txt{}
+.box6-3 .review .txt p{}
+
+/* 이모티콘 설정 */
+.box6-3 .review .imoticon{}
+.imoticon img{}
+.imoticon span{}
+
+/* 업체소개 설정 */
+.box7{}
+.box7-1{}
+.box7-1 .title{}
+.box7-1 .title p{}
+
+/* snsSet 설정 */
+.box8{}
+.box8-1{}
+.box8-1 ul{}
+.box8-1 ul li{}
+.box8-1 ul li a{}
+
+/* 푸터설정 */
+.boxD{}
+.footer{}
+.footer img{}
+.footer .txt{}
+.footer .button{}
+.footer .copyright {}
 
 
 
@@ -19,6 +283,7 @@ body {font-size: 14px;}
 
 
 
+/* 미디어쿼리설정/////////////////////// */
 
 
 
@@ -28,12 +293,10 @@ body {font-size: 14px;}
 
 
 
+/* 1024px이상구간설정////////////////////////////////// */
 
-
-
-
-
-
+.photoimg,. {width: 700px;
+                        margin: 0 auto;}
 
 
 
