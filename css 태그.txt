@@ -1,0 +1,4 @@
+pre : 입력한 그대로 나오게 함
+transform : trans xy축으로 이동
+:hover : 마우스를 올렸을때 특정 css작동
+select : 여러 선택지에서 고를 수 있게 함

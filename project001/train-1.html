@@ -8,17 +8,46 @@
     <!-- 그리드가이드연결 -->
     <!-- <link rel="stylesheet" href="css/grid-guide.css"> -->
     <!-- 외부스타일시트연결 -->
-    <link rel="stylesheet" href="css/train_style.css">
+    <link rel="stylesheet" href="css/train_style-1.css">
     <!-- 폰트어썸CDN -->
     <script src="https://kit.fontawesome.com/85ac904405.js" crossorigin="anonymous"></script>
-
-
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>    
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 900) {
+                    $('#MOVE_TOP_BTN').fadeIn();
+                } else {
+                    $('#MOVE_TOP_BTN').fadeOut();
+                }
+            });
+            
+            $("#MOVE_TOP_BTN").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 800);
+                return false;
+            });
+        });
+    </script>
 
 </head>
 <body>
-   <header>
+    <style>
+        a#MOVE_TOP_BTN {
+            position: fixed;
+            right: 2%;
+            bottom: 50px;
+            
+            display: none;
+            z-index: 999;}
+        a#MOVE_TOP_BTN>img{width: 130px;
+            height: 130px;}
+    </style>
+<a id="MOVE_TOP_BTN" href="#"><img src="img/top2.png" alt=""></a>
+    <header>
     <div class="boxA">
-        <a href="#"><img src="/img/logo9.png"  alt=""></a>
+        <a href="#"><img src="img/logo9.png"  alt=""></a>
     </div>
     <div class="boxB">
         <div class="hero">
@@ -28,13 +57,14 @@
                 <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
             </div>
-            <img src="/img/hero2.jpg" alt="">
-            <!-- <img src="img/slogan001.jpg" alt=""> -->
-            <!-- <img src="img/slogan002.jpg" alt=""> -->
-            <!-- <img src="img/slogan003.jpg" alt=""> -->
-            <pre>전통과 역사가 살아숨쉬는 철도박물관으로
-            가족, 친구, 연인과 함께 여행을 떠나보세요.
-            </pre>
+            <div class="slogan">
+                <!-- <img src="img/slogan001.jpg" alt=""> -->
+                <img src="img/hero.jpg" alt="">
+                <!-- <img src="img/hero2.jpg" alt=""> -->
+                <pre>            <b>전통</b>과 <b>역사</b>가 살아 숨쉬는
+                철도박물관으로 함께 여행을 떠나보세요.
+                </pre>
+            </div>
             <div class="hero_circle">
                 <span></span>
                 <span></span>
@@ -58,7 +88,7 @@
 
         </div>
 
-    </div>
+   
    </header>
    <section>
     <article class="box1">
@@ -70,43 +100,50 @@
                         좌우로 넘겨 더 많은 사진을 확인해보세요.</p>
                 </div>
                         
+
+                </div>
         <div class="box1-2">
                 <div class="photoimg">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    <div>
+                        <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    </div>
                     <div class="imgBox">
-                        <div class="mainimg">
-                            <img src="img/main001.jpg" alt="">
-                            <img src="img/main002.jpg" alt="">
-                            <img src="img/main003.jpg" alt="">
-                            <img src="img/main004.jpg" alt="">
-                            <img src="img/main005.png" alt="">
-                        </div>
-                        <!-- <div class="outimg">
-                            <img src="img/out001.jpg" alt="">
-                            <img src="img/out002.jpg" alt="">
-                            <img src="img/out003.jpg" alt="">
-                            <img src="img/out004.jpg" alt="">
-                            <img src="img/out005.jpg" alt="">
-                        </div>
-                        <div class="trainimg">
-                            <img src="img/train001.jpg" alt="">
-                            <img src="img/train002.jpg" alt="">
-                            <img src="img/train003.jpg" alt="">
-                            <img src="img/train004.jpg" alt="">
-                            <img src="img/train005.jpg" alt="">
-                        </div>
-                        <div class="facilityimg">
-                            <img src="img/facility001.jpg" alt="">
-                            <img src="img/facility002.jpg" alt="">
-                            <img src="img/facility003.png" alt="">
-                            <img src="img/facility004.jpg" alt="">
-                            <img src="img/facility005.jpg" alt="">
-                        </div>
-                    </div> -->
+                        <ul class="mainimg">
+                            <li><img src="img/main001.jpg" alt=""></li>
+                            <li><img src="img/main002.jpg" alt=""></li>
+                            <li><img src="img/main003.jpg" alt=""></li>
+                            <li><img src="img/main004.jpg" alt=""></li>
+                            <li>
+                                <img src="img/main005.png" alt="">
+                            </li> 
+                        </ul>
+                        <ul class="outimg">
+                            <li><img src="img/out001.jpg" alt=""></li>
+                            <li><img src="img/out002.jpg" alt=""></li>
+                            <li><img src="img/out003.jpg" alt=""></li>
+                            <li><img src="img/out004.jpg" alt=""></li>
+                            <li><img src="img/out005.jpg" alt=""></li>
+                        </ul>
+                        <ul class="trainimg">
+                            <li><img src="img/train001.jpg" alt=""></li>
+                            <li><img src="img/train002.jpg" alt=""></li>
+                            <li><img src="img/train003.jpg" alt=""></li>
+                            <li><img src="img/train004.jpg" alt=""></li>
+                            <li><img src="img/train005.jpg" alt=""></li>
+                        </ul>
+                        <ul class="facilityimg">
+                            <li><img src="img/facility001.jpg" alt=""></li>
+                            <li><img src="img/facility002.jpg" alt=""></li>
+                            <li><img src="img/facility003.png" alt=""></li>
+                            <li><img src="img/facility004.jpg" alt=""></li>
+                            <li><img src="img/facility005.jpg" alt=""></li>
+                        </ul>
+                    </div>
                 </div>
             
 
+        </div>
         </div>
         <div class="box1-3">
             <ul class="tab">
@@ -115,6 +152,7 @@
                 <li class=""><a href="">전시열차</a></li>
                 <li class=""><a href="">편의시설</a></li>
             </ul>
+
         </div>
     </article>
     <article class="box2">
@@ -125,29 +163,34 @@
                 <p>아래 메뉴를 클릭하시면 각 시설별로 상세 사진을 확일하실 수 있습니다. 
                     원하시는 시설물을 선택해주세요.</p>
             </div>
-            
         </div>
-        <div class="box2-2">
-            <div class="trailer">
-                <ul class="imgBox">
-                    <li><img src="img/display001.png" alt=""></li>
-                    <li><img src="img/display002.png" alt=""></li>
-                    <li><a href="https://www.railroadmuseum.co.kr/vr/"></a></li>
-                    <li><img src="img/display004.png" alt=""></li>
-                    <li><img src="img/display005.jpg" alt=""></li>
-                    <li><img src="img/display006.jpg" alt=""></li>
+        <div class="conBox">
+            <div class="box2-2">
+                <ul class="tab">
+                    <li><a href="#">실내<br>전시</a></li>
+                    <li><a href="#">야외<br>전시</a></li>
+                    <li><a href="#">360<br>VR</a></li>
+                    <li><a href="#">체험<br>시설</a></li>
+                    <li><a href="#">편의<br>시설</a></li>
+                    <li><a href="#">주차<br>시설</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="box2-3">
-            <ul>
-                <li><a href="#">실내<br>전시</a></li>
-                <li><a href="#">야외<br>전시</a></li>
-                <li><a href="#">360<br>VR</a></li>
-                <li><a href="#">체험<br>시설</a></li>
-                <li><a href="#">편의<br>시설</a></li>
-                <li><a href="#">주차<br>시설</a></li>
-            </ul>
+
+            <div class="box2-3">
+                <div class="trailer">
+                    <ul class="imgBox">
+                        <li><img src="img/display001.png" alt=""></li>
+                        <!-- <li><img src="img/display002.png" alt=""></li> -->
+                        <li>
+                            <!-- <a href="https://www.railroadmuseum.co.kr/vr/"></a> -->
+                            <!-- <img src="img/display002.png" alt=""> -->
+                        </li>
+                        <!-- <li><img src="img/display004.png" alt=""></li> -->
+                        <!-- <li><img src="img/display005.jpg" alt=""></li> -->
+                        <!-- <li><img src="img/display006.jpg" alt=""></li> -->
+                    </ul>
+                </div>
+            </div>
         </div>
     </article>
     <article class="box3">
@@ -162,7 +205,7 @@
             <ul class="reservation_list">
                 <li class="drive">
                     <div class="driveA">
-                        <img src="/img/reservation001.jpg" alt="">
+                        <img src="img/reservation001.jpg" alt="">
                     </div>
                     <div class="driveB">
                         <span>운전체험실</span>
@@ -173,7 +216,7 @@
                                 <a href="">변경<br>확인</a>
                             </div>
                         <p class="p3">
-                            <img src="/img/reservation_icon.png" alt="">
+                            <img src="img/reservation_icon.png" alt="">
                             <span>
                                 하절기(3월~10월) : 09:30 ~ 17:30<br>
                                 동절기(11월~2월) : 09:30 ~ 16:30
@@ -184,7 +227,7 @@
                 </li>
                 <li class="docent">
                     <div class="docentA">
-                        <img src="/img/reservation002.jpg" alt="">
+                        <img src="img/reservation002.jpg" alt="">
                         
                     </div>
                     <div class="docentB">
@@ -198,7 +241,7 @@
                                 <a href="">변경<br>확인</a>
                             </div>
                         <p class="p3">
-                            <img src="/img/reservation_icon.png" alt="">
+                            <img src="img/reservation_icon.png" alt="">
                             <span>
                                 평일 11:40, 14:10<br>
                                 주말 · 공휴일 11:40, 12:40, 13:40, 14:40
@@ -209,7 +252,7 @@
                 </li>
                 <li class="diorama">
                     <div class="dioramaA">
-                        <img src="/img/reservation003.jpeg" alt="">
+                        <img src="img/reservation003.jpeg" alt="">
                         
                     </div>
                     <div class="dioramaB">
@@ -223,7 +266,7 @@
                                 <a href="">변경<br>확인</a>
                             </div>
                         <p class="p3">
-                            <img src="/img/reservation_icon.png" alt="">
+                            <img src="img/reservation_icon.png" alt="">
                             <span>
                                 평일 11:30, 14:00<br>
                                 주말 · 공휴일 11:30, 13:30, 15:30
@@ -245,27 +288,28 @@
             </div>
             
         </div>
-        <ul class="box4-2">
-            <li><img src="https://picsum.photos/id/237/700/500" alt=""> </li>
-        </ul>
-        <ul class="box4-3">
-            <li class="txt">
-                <i class="fa fa-subway" aria-hidden="true"></i>
-                <span>대중교통</span>
-                <p>1호선 의왕역 하차<br>
-                2번 출구로 나와서 우측으로 도보 약 10분</p>
 
-                <p>의왕역 2번출구 앞에서 1-1, 1-5, 5번 버스 승차<br>
-                한국교통대학교 앞에서 하차, 도보 약 3분</p>
-
-                <i class="fa fa-car" aria-hidden="true"></i>
-                <span>자가용</span>
-                <p>경기도 의왕시 철도박물관로 142 (월암동 374-1)</p>
-                <p>영동고속도로 부곡 IC 진출 → 좌측 출구 → 의왕역 → 철도박물관</p>
-                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                <ins>관람객은 박물관 앞 주차장을 무료로 이용하실 수 있습니다.</ins>
-            </li>
-        </ul>
+        <div class="box4-2">
+            <ul class="map">
+                <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.1984255561856!2d126.94871617637224!3d37.314127238560665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5d448395b8fd%3A0xca5bd0c7fb1acd7a!2z7LKg64-E67CV66y86rSA!5e0!3m2!1sko!2skr!4v1684385082278!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+            </ul>
+            <ul class="info">
+                <li class="txt">
+                    <i class="fa fa-subway" aria-hidden="true"></i>
+                    <span>대중교통</span>
+                    <p>1호선 의왕역 하차<br>
+                    2번 출구로 나와서 우측으로 도보 약 10분</p>
+                    <p>의왕역 2번출구 앞에서 1-1, 1-5, 5번 버스 승차<br>
+                    한국교통대학교 앞에서 하차, 도보 약 3분</p>
+                    <i class="fa fa-car" aria-hidden="true"></i>
+                    <span>자가용</span>
+                    <p>경기도 의왕시 철도박물관로 142 (월암동 374-1)</p>
+                    <p>영동고속도로 부곡 IC 진출 → 좌측 출구 → 의왕역 → 철도박물관</p>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <ins>관람객은 박물관 앞 주차장을 무료로 이용하실 수 있습니다.</ins>
+                </li>
+            </ul>
+        </div>
     </article>
     <article class="box5">
         <div class="box5-1">
@@ -309,41 +353,52 @@
         </div>
         <div class="box6-2">
             <div class="preview">
-                <a href=""><img src="/img/review.jpg" alt=""></img></a>
-                <a href=""><img src="/img/pre001.png" alt=""></img></a>
-                <a href=""><img src="/img/pre002.png" alt=""></img></a>
-                <a href=""><img src="/img/pre003.png" alt=""></img></a>
-                <a href=""><img src="/img/pre004.png" alt=""></img></a>
-                <a href=""><img src="/img/pre005.png" alt=""></img></a>
+                <ul>
+                    <li><a href=""><img src="img/review.jpg" alt=""></img></a></li>
+                    <li><a href=""><img src="img/pre001.png" alt=""></img></a></li>
+                    <li><a href=""><img src="img/pre002.png" alt=""></img></a></li>
+                    <li><a href=""><img src="img/pre003.png" alt=""></img></a></li>
+                    <li><a href=""><img src="img/pre004.png" alt=""></img></a></li>
+                    <li><a href=""><img src="img/pre005.png" alt=""></img></a></li>
+                </ul>
             </div>
-            <div>
-                <span>최신순</span>
-                <span>인기순</span>
+            <div class="order">
+                <ul>
+                    <li>최신순</li>
+                    <li>인기순</li>
+                </ul>
             </div>
         </div>
         <div class="box6-3">
             <div class="review">
-                <div><img src="/img/review.jpg" alt=""></div>
-                <div class="txt">
-                    <p>
-                        오늘 손주와 함께 철도박물관에 다녀왔습니다.<br> 
-                        KTX운전게임이 있는데 동전500원이 없어서 못<br>
-                        할뻔했는데...해설사 선생님께서 선뜻 천원을<br>
-                        저에게 주셨습니다. 손주 생각나서 주신다면서.
-                    </p>
-
-                    <p>선생님 덕분에 손주에게 즐거운 추억을 남길 수<br> 
-                        있게되어 이 자리를 빌어 감사말씀 다시 드립니다.</p>
-                </div>
-                <div class="imoticon">
-                    <a href=""><img src="/img/imoticon001.png" alt=""></a>
-                    <a href=""><img src="/img/imoticon002.png" alt=""></a>
-                    <a href=""><img src="/img/imoticon003.png" alt=""></a>
-                    <a href=""><img src="/img/imoticon004.png" alt=""></a>
-                    <a href=""><img src="/img/imoticon005.png" alt=""></a>
-                    <span>도움이 되었어요</span>
-                    <span>32명</span>
-                </div>
+                <ul>
+                    <li><img src="img/review.jpg" alt=""></li>
+                </ul>
+                <ul>
+                    <li class="txt">
+                        <p>
+                            오늘 손주와 함께 철도박물관에 다녀왔습니다.<br>
+                            KTX운전게임이 있는데 동전500원이 없어서 못<br>
+                            할뻔했는데...해설사 선생님께서 선뜻 천원을<br>
+                            저에게 주셨습니다. 손주 생각나서 주신다면서.
+                        </p>
+                        <p>선생님 덕분에 손주에게 즐거운 추억을 남길 수<br>
+                            있게되어 이 자리를 빌어 감사말씀 다시 드립니다.</p>
+                    </li>
+                    <!-- 이모티콘 hover값 적용이 안돼요 ㅠㅠ -->
+                    <li class="imoticon">
+                        <a href="#"><img src="img/imoticon001.png" alt=""></a>
+                        <a href="#"><img src="img/imoticon002.png" alt=""></a>
+                        <a href="#"><img src="img/imoticon003.png" alt=""></a>
+                        <a href="#"><img src="img/imoticon004.png" alt=""></a>                            
+			<a href="#"><img src="img/imoticon005.png" alt=""></a>
+                        <span>도움이 되었어요</span>
+                        <span>32명</span>
+                    </li>
+                </ul>
+                
+                
+                
             </div>
         </div>
     </article>
@@ -366,8 +421,9 @@
     <article class="box8">
         <div class="box8-1">
             <ul class="snsSet">
-                <li><a href="#">INSTAGRAM</a></li>
+                
                 <li><a href="#">FACE BOOK</a></li>
+                <li><a href="#">INSTAGRAM</a></li>
                 <li><a href="#">TWITTER</a></li>
             </ul>
         </div>
@@ -416,7 +472,7 @@
             </ul>
         </div>
         <div class="info">
-            <img src="/img/logo_footer.png" alt="로고이미지">
+            <img src="img/logo_footer.png" alt="로고이미지">
             <div class="txt">
                 한국철도공사     사업자등록번호 : 314-82-10024     본사 : 대전광역시 동구 중앙로 240 <br>
                 철도박물관 : 경기도 의왕시 철도박물관로 142     Tel : 031-461-3610     Fax : 031-460-4322
