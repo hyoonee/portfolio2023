@@ -1,0 +1,820 @@
+@charset 'utf-8'; 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://webfontworld.github.io/daegu/DalseoHealing.css');
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+/* @font-face {
+        font-family: 'KorailRoundGothicBold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2') format('woff2');
+        font-weight: 300;
+        font-style: normal;} */
+
+@font-face {font-family: 'MICEGothic Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;}
+
+/* 전체설정 */
+* {margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+
+body {font-size: 14px;
+    font-family: 'BMJUA';}
+
+
+/*태블릿구간설정 768px ~ 1023px //////////////////////////////////////////////////////////////////// */
+@media(min-width:768px) and (max-width:1023px){
+    .body{max-width: 1023px;}
+
+    /* TOP버튼 설정 */
+a#MOVE_TOP_BTN {right: 30%;}
+a#MOVE_TOP_BTN>img{width: 80px;
+        height: 80px;}
+
+
+    /* header설정 */
+    header{height: 550px;}
+    .hero{height: 500px;}
+    .hero .fontawesome{display: none;}
+    .boxA a img{width: 200px;
+            height: 55px;
+            left: -100px;}
+    .boxB .slogan{width: 100vw;
+            height: 500px;}
+    .boxB .slogan img{height: 500px;}
+    .boxB .slogan pre{font-size: 20px;}
+    .boxB .slogan pre b{font-size: 30px;}
+    .hero_circle span{width: 15px;
+                    height: 15px;}
+    .gnb ul {height: 100px;}                
+    .gnb ul li {width: 20%;
+            height: 50px;
+            padding: 16px 15px;}
+    .gnb ul li a {font-size: 20px;}
+    .gnb ul li a:hover{
+                font-size: 22px;
+                }        
+    
+    /* 포토갤러리 설정 */
+    .box1 {padding-top: 50px;
+        padding-bottom: 15px;}
+    .box1-1 .title h1 {font-size: 38px;}
+    .box1-1 .title p {font-size: 13px;}
+    .photoimg .imgBox {height: 250px;
+                    margin-top: 35px;}                  
+    .photoimg .imgBox>ul li{width:200px;
+                    height: 130px;}
+    .photoimg div:first-child i{display: none;}
+
+.imgBox>ul li:nth-child(2){width: 260px;
+                        height: 180px;}
+.imgBox>ul li:nth-child(2) img{width: 400px;
+                        height: 250px;}
+
+
+/* 포토갤러리 tab메뉴설정 */
+.box1-3 li {width: 150px;
+        margin: 10px;
+            perspective: 3500px;}
+.box1-3 li span{font-size: 22px;}
+
+
+/* 박물관둘러보기 설정*/
+.box2 {margin-top:100px;}
+.box2-1 .TT {font-size: 38px;}
+.box2-1 .title img{width:150px;
+                margin-left: -180px;}
+.box2-1 .title p{font-size: 13px;}
+
+
+/* 트레일러설정 */
+
+.box2-2{margin-right: 30px;
+    }
+    .box2-2 .tab{margin-left: 70px;
+        margin-right: 50px;
+            margin-bottom: 50px;}
+    .box2-2 .tab li {width: 50px;
+                    height: 70px;}
+    .box2-2 .tab li span{
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+                transform: translateY(15px);}
+    .box2-2 .tab li:hover span{background-color: #698DFF;
+                        padding: 20px;
+                        transform: translate(-6px,10px);}
+    .box2-2 .tab li span.on{background-color: #698DFF;
+                        padding: 20px;
+                        transform: translate(-6px,10px);}
+    .box2-2 .imgBox {width: 550px;
+                    height: 370px;} 
+    .box2-2 .imgBox li{width: 550px;
+        height: 370px;}
+    .box2-2 .imgBox iframe{width: 550px;
+        height: 370px;}
+
+
+/* 예약하기설정 */
+.box3{background-size: 100%;
+    padding-bottom: 70px;
+    background-size: 90% 80%;}
+.box3-1 .title h1{font-size: 38px;}
+.box3-1 .title p{margin-top: 13px;}
+
+
+/* 예약상세내용설정 */
+.box3-2{margin-top: 200px;}
+.reservation_list .drive,.reservation_list .docent,.reservation_list .diorama
+    {width: 200px;
+    height: 340px;
+    margin: 0 15px;}
+.docentA,.dioramaA,.driveA{
+    width: 160px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: -50px;}
+.driveA img,.docentA img,.dioramaA img{
+        width: 160px;
+        height: 80px;}
+.docentB span:first-child,.dioramaB span:first-child,.driveB span:first-child
+        {font-size: 18px;}
+.driveB span:first-child{padding: 5px 44px;}
+.docentB span:first-child{padding: 5px 51px;}
+.dioramaB span:first-child{padding: 5px 50.5px;}
+.docentB,.dioramaB,.driveB{margin-top: 35px;
+                        margin-left: -15px;}
+.driveB .p1,.docentB .p1,.dioramaB .p1{font-size: 20px;
+                                        margin-left: 10px;}
+.driveB .p2,.docentB .p2,.dioramaB .p2{font-size: 15px;
+                                        margin-top: 20px;
+                                        margin-left: 10px;}
+.driveB .p3,.docentB .p3,.dioramaB .p3{margin-top: 30px;
+                            margin-left: 20px;}
+.driveB .p3{margin-top: 25px;}
+.p3 span{margin-left: 40px;
+        margin-top: 15px;}
+.box3-2 ul li .p3 img{width: 20px;
+                    height: 20px;
+                    margin-right: 170px;}
+.docentC,.dioramaC,.driveC{margin: 0 30px;
+                font-size: 13px;}
+.driveC a {margin-top: 40px;
+            line-height: 15px;}
+.dioramaC a,.docentC a{margin-top: 20px;
+                    line-height: 15px;}
+.driveB a,.docentB a,.dioramaB a{margin-left: 15px;
+                    padding: 12px 17px;}
+.driveB .p3 span,.docentB .p3 span,.dioramaB .p3 span{
+    font-size: 8px;
+    width: 160px;
+    margin-top: -40px;
+    line-height: 12px;}
+
+
+/* 오시는길설정 */
+.box4{margin-bottom: 50px;}
+.box4-1 .title{margin-top: 100px;}
+.box4-1 .title img{width:150px;
+                left: 50%;
+                margin-left: -140px;
+                top: -50px;}
+.box4-1 .title h1{font-size: 38px;}
+.box4-1 .title p{padding-top: 13px;}
+.box4-2 .info{width: 300px;}
+.box4-2{margin-top: 50px;
+    margin-left: -100px;}
+.box4-2 .map>li{width: 400px;}
+.box4-2 .txt{width: 290px;
+            font-size: 13px;
+            margin-left: 105px;
+            margin-top: 20px;}
+.box4-2 .txt i{transform: translateY(19px);}
+
+.box4-2 .txt span{font-size: 17px;
+                margin-bottom: 20px;
+                margin-left: 20px;}
+.box4-2 .txt p{margin-bottom: 15px;
+                line-height: 20px;}
+.box4-2 .txt ins{font-size: 13px;
+            margin-left: 20px;}
+
+
+/* 공지사항 설정 */
+.box5-1{padding-top: 30px;}
+.notice .title{padding-bottom: -5px;
+            margin-bottom: -10px;}
+.box5-1 .notice .title h1{font-size: 38px;}
+.box5-1 .notice .title p{font-size: 13px;
+                        margin-top: 20px;}
+.box5-1 .notice a{width: 40px;}
+.box5-1 .notice a img{margin-left: 70%;
+                    transform: translateY(-35px);
+                    
+                    width: 40px;
+                    height: 40px;}
+.notice .title>img{width: 60px;
+                    height: 60px;
+                    margin-left: -190px;
+                    transform: translateY(-100px);}
+
+
+/* 공지사항 내용설정 */
+.box5-2{padding-bottom: 10px;}
+.box5-2 .noticeTxt{font-size: 16px;}
+.noticeTxt div:first-child span{padding: 5px 20px;
+                    margin-right: 50px;}
+.box5-2 p{ margin-bottom: 35px;}
+.noticeTxt div:last-child span{margin-left: 90px;
+                        margin-bottom: 30px;}
+
+
+/* 방문후기 설정 */
+.box6{margin-bottom: 80px;}
+.box6-1 .title img{width: 150px;
+                margin-left: -140px;}
+.box6-1 .title h1{font-size: 38px;}
+.box6-1 .title p{font-size: 13px;}
+.preview{margin-top: 280px;}     
+.preview img{width: 100px;
+            height: 100px;}
+.order ul{width: 170px;
+        margin-left: 75%;
+        transform: translateY(-180px);}
+.order ul li{font-size: 13px;}
+.review ul{margin-top: 30px;
+        margin-left: -20px;}  
+.review ul:nth-child(1){
+    width: 200px;
+    height: 200px;
+    padding-top: 0px;
+    margin-left: 0;
+   } 
+.review ul:nth-child(1) li{width: 300px;
+    height: 200px;}
+.review ul:nth-child(2){
+    width: 200px;
+    height: 200px;
+    padding-top: -30px;
+    margin: 0 auto;}
+.review ul:nth-child(2) li:nth-child(1){width: 300px;
+    height: 150px;
+    margin-top: 30px;}    
+.review ul:nth-child(2) li:nth-child(2){width: 290px;
+    height: 150px;
+    }                       
+.review li:first-child{width: 200px;
+                    height: 100px;
+                    margin-right: 50px;
+                    }
+.review li:first-child img{width: 350px;
+                transform: translate(0px,-30px);}
+.review{margin-left: 15%;}
+.review .txt p{font-size: 12px;
+                margin-bottom: 15px;
+                line-height: 20px;}
+
+
+/* 리뷰이모티콘설정 */
+.review .imoticon{margin-top: -40px;
+                margin-left: -30px;
+                width: 250px;}
+.imoticon img{width: 30px;}
+.imoticon span{padding: 5px 2px;
+            font-size: 2px;}
+
+/* 업체소개 설정 */
+.box7{margin-top: 0px;
+    height :50vh;}
+.box7-1{
+    padding-top: 60px;}
+.box7-1 h1{color: #fff;
+        font-size: 38px;
+        font-weight: normal;
+        padding-bottom: 50px;}
+.box7-1 p{height: 100px;
+        padding-bottom: 20px;
+        letter-spacing: 3px;
+        line-height: 30px;
+        font-size: 15px;}
+
+
+/* snsSet 설정 */
+.box8-1 ul li{align-items: center;
+            padding: 18px 0;
+            height: 18px;}
+.box8-1 ul li a{font-size: 18px;}
+.snsSet a:hover{font-size: 20px;}
+
+
+/* 푸터메뉴설정 */
+.footer .index{font-size: 13px;
+        
+        height: 180px;
+        padding: 15px 50px;}
+.index ul{line-height: 30px;}
+.index ul li:first-child{font-size: 15px;
+                        margin-bottom: 10px;}
+
+
+/* 업체정보설정 */
+.footer .info img{width: 80px;
+        height: 80px;
+        margin-left: 15px;}
+.footer .txt{font-size: 12px;
+    margin-top: -100px;}
+.footer .txt p{margin-left: 350px;}
+.info select{margin-left: 620px;
+            width: 130px;}
+.copyright {font-size: 13px;}
+}
+
+
+
+
+
+
+
+/* 모바일구간설정 320px~767px//////////////////////////////////////////////////////////////////////////// */
+@media(min-width:320px) and (max-width:767px){
+
+
+
+    /* .body{max-width: 1023px;} */
+
+    /* TOP버튼 설정 */
+/* a#MOVE_TOP_BTN {right: 30%;}
+a#MOVE_TOP_BTN>img{width: 80px;
+        height: 80px;} */
+
+
+    /* header설정 */
+    header{height: 200px;}
+    .hero{height: 200px;}
+    .hero .fontawesome{display: none;}
+    .boxA .fa-bars{display: block;
+        position: absolute;
+        z-index: 200;
+        right: 20px;
+        top: 10px;
+        color: #f7d40f;
+        font-size: 30px;}
+    .boxA a img{width: 100px;
+            height: 30px;
+            left: -50px;
+            top: -25px;}
+    .boxB .slogan{width: 100vw;
+            height: 200px;}
+    .boxB .slogan img{height: 200px;}
+    .boxB pre {right: 7%;
+        top: 40%;
+        line-height: 20px;
+        font-size: 12px;
+        letter-spacing: 1px;}
+    .boxB .slogan pre b{font-size: 14px;}
+    .hero_circle span{width: 10px;
+                    height: 10px;
+                    margin-left: 6px;}
+    .gnb ul {height: 500px;
+    }                
+    .gnb ul li {width: 20%;
+            height: 30px;
+            padding: 16px 15px;}
+    .gnb ul li a {font-size: 15px;}
+    .gnb ul li a:hover{font-size: 17px;}        
+
+    
+    /* 포토갤러리 설정 */
+    .box1 {padding-top: 30px;
+        height: 100%;
+        padding-bottom: 0px;
+        }
+    .box1-1 .title h1 {font-size: 20px;}
+    .box1-1 .title p {font-size: 7px;}
+    .photoimg .imgBox {height: 250px;
+        margin-top: 35px;}                  
+.photoimg .imgBox>ul li{width:200px;
+        height: 130px;
+        display: none;}
+.photoimg div:first-child i{display: none;}
+
+.imgBox>ul li:nth-child(2){
+            display: block;
+            display: flex;
+            width: 260px;
+            height: 180px;}
+.imgBox>ul li:nth-child(2) img{width: 400px;
+            height: 250px;}
+
+
+/*     .box1 {padding-top: 50px;
+        padding-bottom: 15px;}
+    .box1-1 .title h1 {font-size: 38px;}
+    .box1-1 .title p {font-size: 13px;}
+    .photoimg .imgBox {height: 250px;
+                    margin-top: 35px;}                  
+    .photoimg .imgBox>ul li{width:200px;
+                    height: 130px;}
+    .photoimg div:first-child i{display: none;}
+
+.imgBox>ul li:nth-child(2){width: 260px;
+                        height: 180px;}
+.imgBox>ul li:nth-child(2) img{width: 400px;
+                        height: 250px;}
+ */
+
+/* 포토갤러리 tab메뉴설정 */
+.box1-3{padding-top: 0px;
+    transform: translateY(-20px);}
+.box1-3 li {width: 140px;
+            perspective: 3500px;}
+.box1-3 li span{font-size: 14px;
+                padding: 13px 0;}
+
+
+
+/* 박물관둘러보기 설정*/
+.box2 {margin-top:50px;
+    width: 100vw;
+    height: 67.5vh;
+    padding-bottom: 200px;}
+.box2-1 {}
+.box2-1 .title {position: relative;}
+.box2-1 .TT {}
+.box2-1 .title img{position: absolute;
+                width:100px;
+                left: 75%;
+                margin-left: -200px;
+                top: -25px;
+                z-index: 1;}
+.box2-1 .title h1{z-index: 5;
+                font-size: 25px;
+                position: relative;}
+.box2-1 .title p{display: none;}
+
+
+/* 트레일러설정 */
+
+.box2-2{margin-right: 100px;
+    display: block;
+    margin: 0 auto;
+    width: 90vw;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 100vw;}
+.box2-2 .tab{width: 90vw;
+        margin-left: 5%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        display: flex;}
+.box2-2 .tab li {width: 7%;
+                height: 60px;
+                margin: 0 auto;
+                }
+.box2-2 .tab li span{
+            width: 30px;
+            height: 30px;
+            padding: 6px;
+            font-size: 12px;
+            transform: translateY(15px);}
+.box2-2 .tab li:hover span{background-color: #698DFF;
+                    padding: 8px;
+                    transform: translate(-3px,10px);}
+.box2-2 .tab li span.on{background-color: #698DFF;
+                    padding: 8px;
+                    transform: translate(-3px,10px);}
+
+.box2-2{margin: 0 auto;}
+.box2-2 .imgBox{margin: 0 auto;
+    margin-left: 10%;
+            width: 500px;
+            height: 300px;}
+.box2-2 .imgBox li{width: 80vw;
+            height: 30vh;
+            }     
+.box2-2 .imgBox li img{width: 100%
+            
+            }            
+.box2-2 .imgBox li iframe{width: 80vw;
+    height: 45vh;}
+
+
+
+/* 예약하기설정 */
+.box3{background-size: 75% 600px;
+    padding-bottom: 0px;
+    height: 83vh;
+    }
+/* .box3{background-color: #ADD2FF;
+    padding-top: 50px;
+    background-image: url("../img/background_reservation.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-position-y: 150px;
+    padding-bottom: 100px;} */
+.box3-1 .title h1{font-size: 20px;}
+.box3-1 .title p{font-size: 7px;}
+
+
+/* 예약상세내용설정 */
+.box3-2{margin-top: 350px;}
+.box3-2 ul{display: block;
+            justify-content: center;
+            align-items: center;}
+
+.reservation_list .drive,.reservation_list .docent,.reservation_list .diorama
+    {background: none;
+    position: relative;
+    width: 230px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-radius: 18px;
+    margin: 0 auto;}
+
+.box3-2 ul li{position: relative;}
+.box3-2 ul li div:first-child{position: absolute;}
+.docentA,.dioramaA,.driveA{position: absolute;
+    background-color: #000;
+    border-radius: 15px 15px 0 0;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    left: 0;
+    margin: 0 10px;
+    margin-top: -150px;}
+.docentA:hover img,.dioramaA:hover img,.driveA:hover img{opacity: 0.7;}
+.driveA img,.docentA img,.dioramaA img{
+        transform: translateX(-100px) translateY(-30px);
+        transform: scale(1.2);
+        width: 260px;
+        height: 120px;}
+.docentB,.dioramaB,.driveB{margin-top: 55px;}
+.docentB>span,.dioramaB>span,.driveB>span
+        {display: block;
+        background-color: #f7d40f;
+        color: #fff;
+        
+        font-size: 12px;
+        width: 80px;
+        border-radius: 0 0 15px 15px;
+        transform: translateX(-25px) translateY(-50px);}
+.driveB>span{padding: 5px 50px;
+                        padding-left: 70px;}
+.docentB>span{padding: 5px 50px;
+                padding-left: 70px;}
+.dioramaB>span{padding: 5px 50px;
+                padding-left: 70px;
+                }
+
+.docentB p,.dioramaB p,.driveB p{
+    display: none;}
+.docentC,.dioramaC,.driveC{display: none;}
+
+
+
+/* 오시는길설정 */
+.box4{margin-bottom: 30px;}
+.box4-1 .title{margin-top: 70px;}
+.box4-1 .title img{width:100px;
+                left: 50%;
+                margin-left: -90px;
+                top: -35px;}
+.box4-1 .title h1{font-size: 20px;}
+.box4-1 .title p{display: none}
+
+.box4-2{margin: 0 auto;}
+.box4-2 .info{width: 100%;
+    left: 60%;}
+
+.box4-2{margin-top: 50px;
+    
+        display: block;
+        text-align: center;}
+.box4-2 .txt{font-size: 12px;
+            width: 280px;
+            margin: 0 auto;
+            
+            transform: translateY(-25px);
+            text-align: left;
+            margin-top: 40px;}
+.box4-2 .map{width: 300px;
+    margin: 0 auto;}
+.box4-2 .map li iframe{width: 300px;
+    height: 220px;
+    display: block;
+    margin-left: 0px;}
+.box4-2 .txt i{transform: translateY(17px);}
+
+.box4-2 .txt span{font-size: 15px;
+                margin-bottom: 20px;
+                margin-left: 20px;}
+.box4-2 .txt p{margin-bottom: 15px;
+                line-height: 20px;}
+.box4-2 .txt ins{font-size: 13px;
+            margin-left: 20px;}
+
+
+/* 공지사항 설정 */
+.box5-1{padding-top: 30px;}
+.notice .title{padding-bottom: -5px;
+            margin-bottom: -10px;}
+.notice{height: 90px;}            
+.box5-1 .notice .title h1{font-size: 20px;}
+.box5-1 .notice .title p{display: none;}
+.box5-1 .notice a{width: 40px;}
+.box5-1 .notice a img{margin-left: 70%;
+                    transform: translateY(-35px);
+                    
+                    width: 40px;
+                    height: 40px;}
+.notice .title>img{width: 60px;
+                    height: 60px;
+                    margin-left: -190px;
+                    transform: translateY(-100px);}
+
+
+/* 공지사항 내용설정 */
+.box5-2{
+    padding-bottom: 0px;}
+.box5-2 .noticeTxt{padding-top: 0px;
+                font-size: 12px;
+                }
+.noticeTxt div:first-child span{width: 20px;
+                        border-radius: 8px;
+                        padding: 5px 10px;
+                        transform: translateY(-15px);
+                        margin-bottom: 10px;
+                        margin-right: 270px;}
+.noticeTxt div:first-child{width: 20px;}
+.noticeTxt div:nth-child(2){height: 80px;}                            
+.box5-2 p{display: block;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    transform: translateY(-10px);}
+.noticeTxt p a:hover{text-decoration: underline;}
+.noticeTxt div:last-child span{display: none;}
+
+
+
+/* 방문후기 설정 */
+.box6{margin-bottom: 80px;}
+.box6-1 .title img{width: 150px;
+                margin-left: -140px;}
+.box6-1 .title h1{font-size: 20px;}
+.box6-1 .title p{font-size: 7px;}
+.preview{margin-top: 280px;}   
+.preview li{margin: 0 3px;}
+.preview li:nth-child(4){display: none;}  
+.preview li:nth-child(5){display: none;}  
+.preview img{width: 70px;
+            height: 70px;}
+.order ul{width: 150px;
+        margin-left: 55%;
+        transform: translateY(-130px);}
+.order ul li{font-size: 10px;
+    padding: 4px 10px;}
+.box6-3{width: 100vw;}
+.review{display: block;
+    width: 100vw;
+    height: 400px;
+    margin: 0 auto;}
+.review ul{margin-top: 0px;}
+.review ul:nth-child(1){
+    width: 300px;
+    height: 200px;
+    padding-top: 0px;
+    margin-left: 45%;
+   } 
+.review ul:nth-child(2){
+    width: 300px;
+    height: 200px;
+    padding-top: -30px;
+    margin: 0 auto;
+    
+   } 
+.review ul:nth-child(2) li{display: block;
+    width: 300px;
+    height: 170px;
+    padding-top: 30px;
+    }      
+.review ul:nth-child(2) li:nth-child(2){height: 50px;
+        padding-top: 0;}                   
+.review ul:nth-child(1) li{width: 300px;
+                    height: 200px;
+                    border-radius: 15px;
+                    overflow: hidden;
+                position: absolute;
+                left: 50%;
+                margin-left: -150px;}
+.review li:first-child img{width: 350px;
+                transform: translate(00px,-50px)}
+
+.review .txt{width: 300px;
+        height: 250px;
+        margin: 0 auto;}
+.review .txt p{font-size: 12px;
+                width: 250px;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                line-height: 20px;}
+
+/* 리뷰이모티콘설정 */
+.review .imoticon{width: 80vw;
+    height: 50px;
+    margin: 0 auto;}
+.imoticon img{width: 20px;}
+.imoticon span{padding: 5px 8px;
+            font-size: 10px;}
+
+            /* .review .imoticon{
+                width: 550px;
+                display: block;
+                display: flex;
+                justify-content: center;
+                margin-top: -60px;
+                margin-left: -40px;
+                align-items: center;}
+.review .imoticon a{display: inline-block;
+                    margin-left: 5px;
+                    }
+.imoticon img{transition: all 0.5s;}
+.review .imoticon a:hover img{transform: scale(1.1);}  
+.imoticon span{background-color: #91D6FF;
+                border-radius: 15px;
+                padding: 5px 15px;
+                margin-left: 10px;
+                display: inline-block;} */
+/* 업체소개 설정 */
+.box7{margin-top: 0px;
+    height : 100%;
+    padding-bottom: 0px;}
+.box7-1{
+    padding-top: 30px;}
+.box7-1 h1{color: #fff;
+        font-size: 20px;
+        font-weight: normal;
+        padding-bottom: 20px;}
+.box7-1 p{
+        margin-bottom: -60px;
+        letter-spacing: 3px;
+        line-height: 17px;
+        font-size: 12px;}
+
+
+/* snsSet 설정 */
+.box8{padding-top: 50px;}
+.box8-1 ul li{align-items: center;
+            padding: 8px 0;
+            height: 18px;}
+.box8-1 ul li a{font-size: 12px;}
+.snsSet a:hover{font-size: 14px;}
+
+
+/* 푸터메뉴설정 */
+.footer .index{display: none;}
+.footer .index{font-size: 13px;
+        padding: 15px 50px;}
+.index ul{line-height: 30px;}
+.index ul li:first-child{font-size: 10px;
+                        margin-bottom: 10px;}
+
+
+/* 업체정보설정 */
+.boxD{width: 100vw;}
+footer{height: 150px;
+    }
+.footer{height: 100px;
+    width: 80vw;
+    margin: 0 auto;}
+.footer .info{padding-top: 50px;
+    width: 70vw;
+    margin: 0 auto;}
+.footer .info img{width: 50px;
+        height: 50px;
+        margin-left: 15px;}
+.footer .txt{font-size: 8px;
+    margin-top: -70px;
+    width: 200px;
+    height: 100px;
+    margin-left: 100px;
+    line-height: 15px;}
+.footer .txt p{display: none;}
+.info select{display: none;}
+.copyright {font-size: 8px;
+        margin-left: 120px;
+        width: 150px;
+        margin-top: -30px;}
+
+}
+
+
